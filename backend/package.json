@@ -1,0 +1,24 @@
+{
+  "name": "jobsekai-api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "pnpm@10.15.0",
+  "dependencies": {
+    "fastify": "^5.12.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "tsx": "^4.23.13"
+  }
+}
