@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Archivo_Black, Outfit } from "next/font/google";
 import { cn } from "@/lib/utils";
+import Header from "./components/Header";
 
 const archivoBlack = Archivo_Black({
   subsets: ["latin"],
@@ -25,31 +26,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       )}
     >
       <body className="min-h-full flex flex-col">
-        <header className="px-12 py-3 border-b border-border flex">
-          <h1 className="text-lg font-bold uppercase font-archivo-black">
-            Jobsekai
-          </h1>
-
-          <nav className="ml-auto">
-            <ul className="flex space-x-4">
-              <li>
-                <a href="#" className="hover:underline text-sm">
-                  How it works
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline text-sm">
-                  Ranks
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline text-sm">
-                  Changelog
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
         <main className="px-12 py-8">{children}</main>
       </body>
     </html>
