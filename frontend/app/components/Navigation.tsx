@@ -3,7 +3,7 @@ import { buttonVariants } from "@/components/ui/button";
 export default function Navigation() {
   return (
     <nav className="ml-auto">
-      <ul className="flex space-x-4">
+      <ul className="flex items-center space-x-4">
         <li>
           <a href="#" className="hover:underline text-sm">
             How it works
@@ -20,7 +20,10 @@ export default function Navigation() {
           </a>
         </li>
         <li>
-          <a href="#" className={buttonVariants({ variant: "destructive" })}>
+          <a
+            href="#"
+            className={buttonVariants({ variant: "default", size: "sm" })}
+          >
             Start free
           </a>
         </li>

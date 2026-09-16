@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Archivo_Black, Outfit } from "next/font/google";
+import { Archivo_Black, Outfit, Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Header from "./components/Header";
 
@@ -11,7 +11,7 @@ const archivoBlack = Archivo_Black({
 
 const outfit = Outfit({
   subsets: ["latin"],
-  variable: "--font-outfit",
+  variable: "--font-sans",
 });
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -19,8 +19,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={cn(
-        "h-full antialiased",
-        "font-outfit",
+        "h-full antialiased dark",
+        "font-sans",
         archivoBlack.variable,
         outfit.variable,
       )}
